@@ -1,0 +1,17 @@
+
+Round : 1
+Private key (s) : 36
+Public key (v) : 1296
+Witness (x) : 10201
+Challenge (c) : 1
+Response (y) : 3636
+(y^2)mod n : 431112 and x*(v^c)mod n : 431112
+Yes (It's probable)
+Round : 2
+Private key (s) : 36
+Public key (v) : 1296
+Witness (x) : 10201
+Challenge (c) : 1
+Response (y) : 3636
+(y^2)mod n : 431112 and x*(v^c)mod n : 431112
+Yes (It's probable)

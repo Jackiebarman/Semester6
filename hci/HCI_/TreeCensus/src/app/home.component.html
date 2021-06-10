@@ -1,0 +1,46 @@
+<div *ngIf="heref.errors && (heref.dirty || heref.touched)" class="alert alert-danger">
+               <div [hidden]="!heref.errors.required">
+                   please enter tree Height
+               </div >
+              
+               <div [hidden]="!heref.errors.minlength">
+                   please enter atleast 3 charcter
+               </div>
+
+</div>
+
+
+
+
+ <div *ngIf="rref.errors && (rref.dirty || rref.touched)" class="alert alert-danger">
+                <div [hidden]="!rref.errors.required">
+                    please enter tree radius
+                </div >
+                
+                <div [hidden]="!rref.errors.minlength">
+                    please enter atleast 3 charcter
+                </div>
+ </div>
+
+
+ <div *ngIf="lref.errors && (lref.dirty || lref.touched)" class="alert alert-danger">
+                <div [hidden]="!lref.errors.required">
+                    please enter treename
+                </div >
+                
+                <div [hidden]="!lref.errors.minlength">
+                    please enter atleast 3 charcter
+                </div>
+                </div>
+
+
+
+                 <div *ngIf="lreff.errors && (lreff.dirty || lreff.touched)" class="alert alert-danger">
+                <div [hidden]="!lreff.errors.required">
+                    please enter treename
+                </div >
+                
+                <div [hidden]="!lreff.errors.minlength">
+                    please enter atleast 3 charcter
+                </div>
+                </div>

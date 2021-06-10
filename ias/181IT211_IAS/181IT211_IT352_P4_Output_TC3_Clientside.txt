@@ -1,0 +1,16 @@
+
+ Round : 1
+Private key (s) : 36
+Public key (v) : 1296
+Random number (r) : 101
+Witness (x) : 10201
+Challenge (c) : 1
+Response (y) : 3636
+
+ Round : 2
+Private key (s) : 36
+Public key (v) : 1296
+Random number (r) : 101
+Witness (x) : 10201
+Challenge (c) : 1
+Response (y) : 3636

@@ -1,0 +1,17 @@
+
+Round : 1
+Private key (s) : 22
+Public key (v) : 484
+Witness (x) : 225
+Challenge (c) : 0
+Response (y) : 15
+(y^2)mod n : 225 and x*(v^c)mod n : 225
+Yes (It's probable)
+Round : 2
+Private key (s) : 22
+Public key (v) : 484
+Witness (x) : 225
+Challenge (c) : 1
+Response (y) : 330
+(y^2)mod n : 108900 and x*(v^c)mod n : 108900
+Yes (It's probable)

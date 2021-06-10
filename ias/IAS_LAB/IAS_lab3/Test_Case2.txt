@@ -1,0 +1,59 @@
+1.  Source IP Only
+ 2.Destination IP  Only  
+3. Both Source and Destination without Port numbers
+4. Enter all the values
+
+Please enter the desired option : 2
+Please enter the Destination IP address : 100.100.110.100
+** Please run 171IT150_IT352_P3b.py file **
+The captured packet's raw format is as follows : 
+ [b'&y\xf3\xa2e\xdf\x08\xed\xb9\x8c\xbbK\x08\x00E\x00\x00(\x00\x01\x00\x00@\x06\x16v\xc8\xc8\xc8\xc8ddnd\x00Q\x01\x90\x00\x00\x00\x00\x00\x00\x00\x00P\x02 \x00)\xa8\x00\x00']
+The following packets are sniffed: 
+ ['26 79 f3 a2 65 df 08 ed b9 8c bb 4b 08 00 45 00 00 28 00 01 00 00 40 06 16 76 c8 c8 c8 c8 64 64 6e 64 00 51 01 90 00 00 00 00 00 00 00 00 50 02 20 00 29 a8 00 00']
+--------------------------------------------------------
+Frame Number :  1 
+
+--------------------------------------------------------
+The Destination MAC Address :  08.ed.b9.8c.bb.4b 
+
+ The Source MAC Address :  08.ed.b9.8c.bb.4b 
+
+The Type of Field :  IP 
+
+This is an IPv4 packet
+
+Type Of Service :  00 
+
+Packet Length :  40 
+
+IPID :  1 
+
+Time To Live :  64 
+
+Embedded Protocol : TCP
+
+IP Checksum :  5750 
+
+Source IP Address :  200.200.200.200 
+
+Destination IP Address :  100.100.110.100 
+
+Source Port Number :  81 
+
+Destination Port Number :  400 
+
+Sequence Number :  0 
+
+ACK Number :  0 
+
+TCP Header Length :  20 
+
+TCP Flag Field :  00000010 
+
+Window Size :  8192 
+
+TCP Checksum :  10664 
+
+Urgent PTR :  0 
+
+The Action corresponding to the ACL is :  Deny 

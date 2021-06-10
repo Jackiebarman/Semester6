@@ -1,0 +1,136 @@
+
+<div id="image" *ngIf="!issubmit" class="container-fluid">
+    <br>
+    <h3 style="color: darkgreen;text-align: center;"><b>Please Enter the Letters</b></h3>
+    <br>
+    <div class="row">
+        <div class="col-sm">
+
+        </div>
+        <div class="col-sm">
+            <form #userform="ngForm" (ngSubmit)="onSubmit(userform.value)">
+        
+            <tr>
+                <td>
+                    <div class="form-group ">
+                    
+                        <div >
+                          <input class="form-control" type="text"  name="val1" [(ngModel)]="val1">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group ">
+                    
+                        <div >
+                          <input class="form-control" type="text"  name="val2" [(ngModel)]="val2">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group ">
+                    
+                        <div >
+                          <input class="form-control" type="text"  name="val3" [(ngModel)]="val3">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group ">
+                    
+                        <div >
+                          <input class="form-control" type="text"  name="val4" [(ngModel)]="val4">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group ">
+                    
+                        <div >
+                          <input class="form-control" type="text"  name="val5" [(ngModel)]="val5">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group ">
+                    
+                        <div >
+                          <input class="form-control" type="text"  name="val6" [(ngModel)]="val6">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group ">
+                    
+                        <div >
+                          <input class="form-control" type="text"  name="val7" [(ngModel)]="val7">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group ">
+                    
+                        <div >
+                          <input class="form-control" type="text"  name="val8" [(ngModel)]="val8">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group ">
+                    
+                        <div >
+                          <input class="form-control" type="text"  name="val9" [(ngModel)]="val9">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group ">
+                    
+                        <div >
+                          <input class="form-control" type="text"  name="val10" [(ngModel)]="val10">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group ">
+                    
+                        <div >
+                          <input class="form-control" type="text"  name="val11" [(ngModel)]="val11">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group ">
+                    
+                        <div >
+                          <input class="form-control" type="text"  name="val12" [(ngModel)]="val12">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+                
+                <br>
+                <p style="text-align: center;"><button style="text-align: center;" type="submit" class="btn btn-success">Enter</button></p>
+              </form>
+        </div>
+        <div class="col-sm">
+            
+        </div>
+    </div>
+    
+
+      
+</div>
+<div *ngIf="issubmit">
+    <br><br>
+    <h3 style="text-align: center; color: blue;">Correct:<span style="color: black;">&nbsp;&nbsp;{{this.correct}}</span></h3>
+    <h3 style="text-align: center;color: red;">Incorrect:<span style="color: black;">&nbsp;&nbsp;{{this.incorrect}}</span></h3>
+    <hr>
+    <h4 style="text-align: center;color: blue;">Score:<span style="color: black;">&nbsp;&nbsp;{{this.score}}</span></h4>
+
+</div>
+ 

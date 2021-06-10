@@ -1,0 +1,85 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="]Pzo5-AUo%QmOyw};!IZ" x="-505" y="-258">
+    <mutation component_type="DatePicker" is_generic="false" instance_name="DatePicker1" event_name="AfterDateSet"></mutation>
+    <field name="COMPONENT_SELECTOR">DatePicker1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="/?38Q572c,pFhL#(y5Xu">
+        <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="TextBox7"></mutation>
+        <field name="COMPONENT_SELECTOR">TextBox7</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="text_join" id="_#4BZ4^BscKO4Bb:J|~S">
+            <mutation items="5"></mutation>
+            <value name="ADD0">
+              <block type="component_set_get" id="_nHThaGWwgDi4YG^-3!`">
+                <mutation component_type="DatePicker" set_or_get="get" property_name="Day" is_generic="false" instance_name="DatePicker1"></mutation>
+                <field name="COMPONENT_SELECTOR">DatePicker1</field>
+                <field name="PROP">Day</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id="u$!33iOhf.mv!adA6`.d">
+                <field name="TEXT">/</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="component_set_get" id="GD{tX8y;~wo(,Ood^tqm">
+                <mutation component_type="DatePicker" set_or_get="get" property_name="Month" is_generic="false" instance_name="DatePicker1"></mutation>
+                <field name="COMPONENT_SELECTOR">DatePicker1</field>
+                <field name="PROP">Month</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="text" id="u)1AntPSwU4b5HJhWSv6">
+                <field name="TEXT">/</field>
+              </block>
+            </value>
+            <value name="ADD4">
+              <block type="component_set_get" id="/vY%j3be5D?I=g@BkH%]">
+                <mutation component_type="DatePicker" set_or_get="get" property_name="Year" is_generic="false" instance_name="DatePicker1"></mutation>
+                <field name="COMPONENT_SELECTOR">DatePicker1</field>
+                <field name="PROP">Year</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="^|5a-!hnMpH/j:h1]!*c" x="-514" y="-43">
+    <mutation component_type="TimePicker" is_generic="false" instance_name="TimePicker1" event_name="AfterTimeSet"></mutation>
+    <field name="COMPONENT_SELECTOR">TimePicker1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="Hu]pXG?|K^nF9fIn2{)u">
+        <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="TextBox8"></mutation>
+        <field name="COMPONENT_SELECTOR">TextBox8</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="text_join" id="-1(m?y04z6Q}T`)5:!vx">
+            <mutation items="3"></mutation>
+            <value name="ADD0">
+              <block type="component_set_get" id="j:1UqP|$D):_PL~Y@$+j">
+                <mutation component_type="TimePicker" set_or_get="get" property_name="Hour" is_generic="false" instance_name="TimePicker1"></mutation>
+                <field name="COMPONENT_SELECTOR">TimePicker1</field>
+                <field name="PROP">Hour</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id="3Fk*hw54cm?_J$[TL_JO">
+                <field name="TEXT">:</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="component_set_get" id="-,V0@*(Ektbc0usS098d">
+                <mutation component_type="TimePicker" set_or_get="get" property_name="Minute" is_generic="false" instance_name="TimePicker1"></mutation>
+                <field name="COMPONENT_SELECTOR">TimePicker1</field>
+                <field name="PROP">Minute</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>

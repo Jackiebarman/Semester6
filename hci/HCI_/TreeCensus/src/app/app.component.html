@@ -1,0 +1,116 @@
+<div class="bg-image">
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm">
+
+</div>
+<div class="col-sm">
+        <body *ngIf="!submit" >
+            
+        <h3 style="text-align: center;color: darkblack;"><b>Forest Tree Census Application</b> </h3>
+        <br>
+        
+        <div   class="container" style="background-color:#8cff66">
+            <form #userform="ngForm" (ngSubmit)="onSubmit(userform.value)">
+
+            <div class="form-group"><br>
+                <label>Tree name</label>
+                <input type="text" #nameref="ngModel" minlength="3" required class="form-control" name="treename" [(ngModel)]="treename">
+                <div *ngIf="nameref.errors && (nameref.dirty || nameref.touched)" class="alert alert-danger">
+                <div [hidden]="!nameref.errors.required">
+                    please enter treename
+                </div >
+                
+                <div [hidden]="!nameref.errors.minlength">
+                    please enter atleast 3 charcter
+                </div>
+                </div>
+            </div>
+           
+           
+
+            <div class="form-group">
+                <label>Tree Type</label>
+                <input type="text" #typeref="ngModel" minlength="3" required class="form-control" name="treetype" [(ngModel)]="treetype">
+                <div *ngIf="typeref.errors && (typeref.dirty || typeref.touched)" class="alert alert-danger">
+                <div [hidden]="!typeref.errors.required">
+                    please enter treetype
+                </div >
+                
+                <div [hidden]="!typeref.errors.minlength">
+                    please enter atleast 3 charcter
+                </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Height of Tree(m)</label>
+                <input type="text" minlength="3" required class="form-control" name="treeheight">
+                
+            </div>
+
+            <div class="form-group">
+                <label>Radius of Tree(m)</label>
+                <input type="text" minlength="3" required class="form-control" name="treeradius">
+               
+            </div>
+              
+            <div class="form-group row">
+                <label for="example-date-input" class="col-2 col-form-label">Date</label>
+                <div class="col-10">
+                  <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                <div class="col-10">
+                  <input class="form-control" type="time" value="13:45:00" id="example-time-input">
+                </div>
+              </div>
+
+
+            <div class="form-group"><br>
+                <label>Latitude</label>
+                <input type="text" minlength="3" required class="form-control" name="treename" value={{final[0]}}>
+                
+            </div>
+
+             <div class="form-group"><br>
+                <label>Longitude</label>
+                <input type="text" minlength="3" required class="form-control" name="treename" value={{final[1]}}>
+               
+            </div>
+
+              
+            <button [disabled]="!userform.form.valid" id="let" type="submit" style="align-items: center;" class="btn btn-primary">
+            <p class="neon_a" id="neon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          
+            Submit
+            </p>
+            </button>
+            
+            </form>
+            <br><br>
+        </div>
+        <br><br>
+        
+        </body>
+        <div *ngIf="submit">
+            <br><br>
+            <h2 style="text-align: center;color: white;">Data is stored sucessfully !!!</h2>
+        </div>
+  </div>
+  <div class="col-sm">
+
+  </div>
+  </div>
+
+  </div>
+
